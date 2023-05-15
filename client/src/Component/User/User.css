@@ -1,0 +1,27 @@
+.homeUser .MuiTypography-root {
+
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  
+  
+}
+
+
+@media screen and (max-width: 600px) {
+    .homeUser {
+      font-size: small;
+    }
+  
+    .homeUser .MuiTypography-root {
+      font-size: x-small;
+      font-weight: bold;
+  
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      
+      
+    }
+  }

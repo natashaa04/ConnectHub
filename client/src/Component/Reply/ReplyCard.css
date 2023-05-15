@@ -1,0 +1,133 @@
+
+
+
+
+   .replyUser {
+    display: flex;  
+    flex-direction: column;
+    /* align-items: center; */
+    margin-bottom: 1rem;
+    height: auto;
+    border: 2px solid grey;
+    margin-left: 10%;
+    margin-top: 3%;
+    margin-right: 2%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+  }
+  
+  .replyUser .userInfo {
+    display: flex;
+    /* flex-direction:row; */
+    align-items: center;
+    margin-right: 1rem;
+    /* margin-left: 5%; */
+    width: 100%;
+  }
+  
+  .userInfo > a {
+    display: flex;
+    width: 40%;
+  }
+  
+  .userInfo .MuiTypography-root {
+    margin-top: 1%;
+    margin-left: 1%;
+    font-size: medium;
+    color: black;
+    font-weight: 600;
+  }
+  
+  .replyUser .userInfo img {
+    height: 1.8rem;
+    width: 1.8rem;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 201, 201);
+    /* flex-direction: row; */
+  }
+  
+  .replyUser .userInfo button {
+    text-align: right;
+    float: left;
+    margin-left: 52%;
+    color: grey;
+  }
+  
+  .replyUser .userInfo button:hover {
+    color: red;
+  }
+  
+  .replyUser .replyData {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7%;
+    height: auto;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    align-items: center;
+  }
+  
+  .replyUser .replyData .replyText {
+    margin-top: 0;
+    font-size: 85%;
+    text-align: left;
+  }
+
+  
+  @media screen and (max-width: 600px) {
+    .replyUser {
+      width: 40vw;
+    }
+    .replyUser .userInfo .MuiTypography-root {
+      font-size: small;
+      margin-top: 7%;
+    }
+    .commentUser .commentData {
+      width: 50vw;
+      display: flex;
+      flex-direction: column;
+      margin-left: 7%;
+      height: auto;
+      word-break: break-all;
+      overflow-wrap: break-word;
+      align-items: center;
+    }
+    .replyAndLikeBtn{
+      display: flex;
+      flex-direction: row;
+      margin-top: 0;
+      /* justify-content: space-between; */
+    }
+    .replyAndLikeBtn > button {
+      font-size: 3vw;
+      margin-left: 4%;
+      padding: 0;
+      min-width:fit-content;
+    }
+    .replyAndLikeBtn > button >svg{
+      font-size: 5vw;
+    }
+    .replyAndLikeBtn > button  .MuiTypography-root{
+      font-size: x-small;
+      margin-bottom: 9%;
+    }
+
+    .replyUser .userInfo > button{
+      text-align: right;
+      float: left;
+      margin-left: 42%;
+      margin-bottom: 5%;
+      margin-right: 3%;
+      color: grey;
+      min-width: auto;
+    }
+    .commentUser .userInfo >button >svg{
+        font-size: 5vw;
+    }
+    
+    
+
+  }
+   
+
+  

@@ -1,0 +1,106 @@
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .registerForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .registerForm input {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #f7f7f7;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .registerForm input:focus {
+    outline: none;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* .registerForm input[type="file"] {
+    display: none;
+  } */
+  
+  .registerForm label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 1rem 0;
+  }
+  
+  .registerForm label span {
+    margin-top: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .registerForm button {
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #1a73e8;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto;
+  }
+  
+  .registerForm button:hover {
+    background-color: #0d6efd;
+  }
+  
+  .registerForm a {
+    margin-top: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #1a73e8;
+    font-size: 0.8rem;
+  }
+  
+  .registerForm a:hover {
+    text-decoration: underline;
+  }
+
+   .registerForm input[type="file"]::-webkit-file-upload-button {
+    background-color: #3f51b5;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+    height: 1.5rem;
+    
+
+
+  }
+  
+  .registerForm input[type="file"]::-webkit-file-upload-button:hover {
+    background-color: #2a3f9d;
+  } 
+  input[type="file"] {
+    height: 1.6rem;
+
+    
+  }
+  
+  
+  
+  

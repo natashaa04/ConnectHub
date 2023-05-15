@@ -1,0 +1,236 @@
+
+
+.post {
+    width: 60%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 0 1vmax 2vmax;
+    margin: 2vmax;
+    
+  }
+  
+  .postHeader {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .postHeader > button {
+    border-radius: 100%;
+    color: rgba(0, 0, 0, 0.582);
+  
+  }
+  
+  .post > img {
+    width: 100%;
+    /* margin-top: 3%; */
+  }
+  
+  .postDetails {
+    display: flex;
+    /* padding: 1vmax; */
+    flex-direction: column;
+    
+  }
+  .post .userDetail {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    position:relative;
+  }
+  .post .dateBox{
+    margin-left: 10%;
+    color: grey;
+  }
+
+  
+  .postDetails > a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin: 1vmax;
+  }
+  
+  .postFooter > button {
+    color: rgba(0, 0, 0, 0.767);
+    margin: 0 1vmax;
+    border-radius: 100%;
+    transition: all 0.3s;
+  }
+  
+  .postFooter > button:hover {
+    transform: translateY(-4px);
+  }
+  
+  .postFooter > button > svg {
+    font-size: 1.7vmax;
+  }
+  
+  .DialogBox {
+     width: 500px;
+    height: 80vh;
+
+    padding: 2vmax;
+     /* border:2px solid red; */
+    
+  }
+  .commentForm {
+    display: flex;
+    margin: 1vmax;
+  }
+  .commentForm > input {
+    width: 100%;
+    padding: 1vmax 2vmax;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.288);
+    border-radius: 30px 0 0 30px;
+    font: 100 1vmax "Roboto", sans-serif;
+  }
+  .commentForm > button {
+    border-radius: 0%;
+  }
+
+  .postFooter {
+    display: flex;
+    align-items: center;
+  }
+  
+  .postFooter > button {
+    color: rgba(0, 0, 0, 0.767);
+    margin: 0 1vmax;
+    /* margin: 0 0.5vmax;  */
+    border-radius: 100%;
+    transition: all 0.3s;
+  }
+  
+  .postFooter > button:hover {
+    transform: translateY(-4px);
+  }
+  
+  .postFooter > button > svg {
+    font-size: 1.7vmax;
+  }
+
+  .post .userDetail .userName{
+     font-weight:600;
+     align-self: center;
+      display:block;
+     margin-left:10%;
+     margin-top:3%;
+     font-size:large;
+     
+   
+    } 
+
+  
+  
+  @media screen and (max-width: 600px) {
+    .post {
+      width: 92%;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 0 0vmax 1.5vmax 0vmax;
+    margin: 1vmax;
+  }
+    .postFooter > button > svg {
+      font-size: 5vw;
+    }
+     
+    .postFooter > button{
+      margin: 0 ;
+      min-width: auto;
+    }
+
+
+    
+    .post .postFooter{
+      width: auto;
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+    .post .userDetail{
+      position: relative;
+    }
+   
+    .post .userDetail .userName{
+      font-size: small;
+      margin-top:3%;
+      padding: 0;
+      font-weight: bolder;
+      
+    
+      } 
+      .post .userDetail > button{
+       padding: 0;
+       margin: 0;
+       right:0;
+       position: absolute; 
+      min-width: auto;
+        
+    } 
+    .post .dateBox{
+          font-size: small;
+    }
+
+    .post .likeNumbers{
+      font-size: small;
+    }
+
+      
+  .DialogBox {
+    width: 90vw;
+    height: 90vh;
+    /* padding: 2vmax; */
+   overflow-x: hidden;
+   display: flex;
+   flex-wrap: wrap;
+ 
+ 
+    
+    
+  }
+  /* .mainDialogBox {
+    width: 90vw;
+    height: 90vh;
+    /* padding: 2vmax; */
+  
+    
+  
+  .commentForm {
+    display: flex;
+    margin: 1vmax;
+    flex-direction: column;
+  }
+  .commentForm > input {
+   width: 140px;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.288);
+    border-radius: 30px 0 0 30px;
+    font: 100 1vmax "Roboto", sans-serif; 
+    text-align: left;
+    display: block;
+    
+  }
+  .commentForm > button {
+    border-radius: 0%;
+    display: block;
+    padding: 0;
+    margin:0;
+  
+  }
+
+  
+  }
+
+
+
+
+
+
+
+
+
+  /* const isMobile = useMediaQuery(theme.breakpoints.down("sm")); */

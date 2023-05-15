@@ -1,0 +1,191 @@
+
+   .commentUser {
+    display: flex;  
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+    height: auto;
+    border: 2px solid grey;
+     
+  }
+  
+  .commentUser .userInfo {
+    display: flex;
+  
+    align-items: center;
+    margin-right: 1rem;
+    
+    width: 100%;
+  }
+  
+  .userInfo > a {
+    display: flex;
+    width: 40%;
+  }
+  
+  .userInfo .MuiTypography-root {
+    margin-top: 1%;
+    margin-left: 1%;
+    font-size: medium;
+    color: black;
+    font-weight: 600;
+  }
+  
+  .commentUser .userInfo img {
+    height: 1.8rem;
+    width: 1.8rem;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 201, 201);
+  
+  }
+  
+  .commentUser .userInfo button {
+    text-align: right;
+    float: left;
+    margin-left: 52%;
+    color: grey;
+  }
+  
+  .commentUser .userInfo button:hover {
+    color: red;
+  }
+  
+  .commentUser .commentData {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7%;
+    height: auto;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    align-items: center;
+  }
+  
+  .commentUser .commentData .commentText {
+    margin-top: 0;
+    font-size: 85%;
+    text-align: left;
+  }
+
+  
+  .DialogBoxx {
+    min-width: 250px;
+    height: 10vh;
+    padding: 1vmax;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+
+
+  
+  .commentForm {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .commentForm input[type="text"] {
+    height: 25px; 
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    flex-grow: 1;
+  }
+  
+  .commentForm button[type="submit"] {
+    font-size: 12px; 
+    padding: 5px 10px;
+    background-color: #0066ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 35px;
+    margin-top: 2%;
+  }
+  
+  .commentForm button[type="submit"]:hover {
+    background-color: #0052cc;
+  }
+   .viewRepliesButton {
+    color: grey;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  .replyAndLikeBtn button {
+    color: grey;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-transform: none;
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .commentUser {
+      width: 65vw;    
+    }
+    .commentUser .userInfo .userName{
+      font-size: small;
+      margin-top: 7%;
+    }
+    .commentUser .commentData .commentText {
+      width: 60vw;
+      height: auto;
+      word-break: break-all;
+      overflow-wrap: break-word;
+      align-items: center;
+      margin-left: 5%;
+    }
+
+
+    
+    .replyAndLikeBtn{
+      display: flex;
+      flex-direction: row;
+      margin-top: 0;
+      width: 65vw;
+      gap: 14%;
+      /* justify-content: space-between; */
+    }
+    .replyAndLikeBtn > button {
+      font-size: 3vw;
+      margin-left: 4%;
+      padding: 0;
+      min-width:fit-content;
+    }
+    .replyAndLikeBtn > button >svg{
+      font-size: 5vw;
+    }
+    .replyAndLikeBtn > button  .MuiTypography-root{
+      font-size: x-small;
+      margin-bottom: 9%;
+    }
+
+    .commentUser .userInfo > button{
+      text-align: right;
+      float: left;
+      margin-left: 42%;
+      color: grey;
+      min-width: auto;
+    }
+    .commentUser .userInfo >button >svg{
+        font-size: 5vw;
+    }
+    .commentForm > input {
+      /* width: 90vw; */
+      padding: 0;
+      margin: 0;
+      outline: none;
+      border: 1px solid rgba(0, 0, 0, 0.288);
+      border-radius: 30px 0 0 30px;
+      font: 100 1vmax "Roboto", sans-serif;
+      text-align: left;
+    }
+    
+
+  }
+   
