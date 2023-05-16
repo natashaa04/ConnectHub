@@ -236,7 +236,7 @@ const Post = ({
         open={captionToggle}
         onClose={() => setCaptionToggle(!captionToggle)}
       >
-        <div className="DialogBox">
+        <div className="updateDialogBox">
           <Typography variant="h4">Update Caption</Typography>
 
           <form className="commentForm" onSubmit={updateCaptionHandler}>
