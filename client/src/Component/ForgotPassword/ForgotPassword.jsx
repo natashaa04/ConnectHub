@@ -38,7 +38,7 @@ const ForgotPassword = () => {
     <div className="forgotPassword">
       <form className="forgotPasswordForm" onSubmit={submitHandler}>
         <Typography variant="h3" style={{ padding: "2vmax" }}>
-          Social Aap
+          Social Hub
         </Typography>
 
         <input

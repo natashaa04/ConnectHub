@@ -42,10 +42,10 @@ const UpdatePassword = () => {
     <div className="updatePassword">
       <form className="updatePasswordForm" onSubmit={submitHandler}>
         <Typography variant="h3" style={{ padding: "2vmax" }}>
-          Social Aap
+          Social Hub
         </Typography>
 
-        <input
+        <input 
           type="password"
           placeholder="Old Password"
           required
@@ -63,7 +63,7 @@ const UpdatePassword = () => {
           onChange={(e) => setNewPassword(e.target.value)}
         />
 
-        <Button disabled={loading} type="submit">
+        <Button disabled={loading} type="submit" className="UpdatePasswordButton">
           Change Password
         </Button>
       </form>

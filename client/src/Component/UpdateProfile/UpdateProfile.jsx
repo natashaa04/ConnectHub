@@ -74,7 +74,7 @@ const UpdateProfile = () => {
     <div className="updateProfile">
       <form className="updateProfileForm" onSubmit={submitHandler}>
         <Typography variant="h3" style={{ padding: "2vmax" }}>
-          Social Aap
+          Social Hub
         </Typography>
 
         <Avatar
