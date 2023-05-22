@@ -66,7 +66,7 @@
     font-size: 1.7vmax;
   }
   
-  .DialogBox {
+  .updateDialogBox {
      width: 500px;
     height: 80vh;
 
@@ -190,28 +190,32 @@
     
     
   }
-  /* .mainDialogBox {
+   .mainDialogBox {
     width: 90vw;
     height: 90vh;
-    /* padding: 2vmax; */
-  
+     /* padding: 2vmax; */
+   } 
     
   
   .commentForm {
     display: flex;
-    margin: 1vmax;
+    /* margin: 1vmax; */
+     margin-left: 15%;
     flex-direction: column;
   }
   .commentForm > input {
-   width: 140px;
+   
+    width: 140px;
     padding: 0;
-    margin: 0;
+    margin-left: 10%;
     outline: none;
     border: 1px solid rgba(0, 0, 0, 0.288);
     border-radius: 30px 0 0 30px;
     font: 100 1vmax "Roboto", sans-serif; 
     text-align: left;
     display: block;
+    height: 50px;
+    border: 2px solid green;
     
   }
   .commentForm > button {
@@ -220,6 +224,15 @@
     padding: 0;
     margin:0;
   
+  }
+  .updateDialogBox  {
+    width: 64vw;
+    height: 40vh;
+  }
+  .updateDialogBox .MuiTypography-root{
+    font-size: medium;
+    margin-left: 25%;
+    font-weight: bolder;
   }
 
   

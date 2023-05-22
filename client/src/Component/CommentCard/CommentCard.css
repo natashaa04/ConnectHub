@@ -6,6 +6,7 @@
     margin-bottom: 1rem;
     height: auto;
     border: 2px solid grey;
+    margin: 3%;
      
   }
   
@@ -126,7 +127,9 @@
 
   @media screen and (max-width: 600px) {
     .commentUser {
-      width: 65vw;    
+      width: 65vw; 
+      margin-left: 2%; 
+      margin-right: 0;  
     }
     .commentUser .userInfo .userName{
       font-size: small;

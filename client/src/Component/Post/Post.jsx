@@ -232,12 +232,12 @@ const Post = ({
         </div>
       </Dialog>
 
-      <Dialog 
+      <Dialog className="mainDialogBox"
         open={captionToggle}
         onClose={() => setCaptionToggle(!captionToggle)}
       >
         <div className="updateDialogBox">
-          <Typography variant="h4">Update Caption</Typography>
+          <Typography variant="h4" className="UpdateCaption">Update Caption</Typography>
 
           <form className="commentForm" onSubmit={updateCaptionHandler}>
             <input className="commentInput"
