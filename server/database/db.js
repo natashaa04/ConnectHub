@@ -8,9 +8,7 @@ export const Connection=(username,password)=>{
         mongoose.connect(URL,{ 
             useUnifiedTopology:true,
             useNewUrlParser:true,
-            useNewUrlParser:true,
-            useUnifiedTopology:true
-
+            
         
         
         })

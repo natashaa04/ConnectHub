@@ -40,6 +40,7 @@ const Post = ({
   const [commentToggle, setCommentToggle] = useState(false);
   const [captionValue, setCaptionValue] = useState(caption);
   const [captionToggle, setCaptionToggle] = useState(false);
+  
 
   const dispatch = useDispatch();
   const { user } = useSelector((state) => state.user);
@@ -70,6 +71,7 @@ const Post = ({
     
     e.preventDefault();
      console.log('comment is here')
+
     await addCommentOnPost(postId, commentValue);
     setCommentToggle(false);
 

@@ -5,7 +5,7 @@ import { register,login,
     updatePassword,
     updateProfile,
     deleteMyProfile,
-    myProfile,
+    myProfile, 
     getUserProfile,
     getAllUsers,
     forgotPassword,
@@ -31,8 +31,7 @@ import { register,login,
     const router=express.Router();
 
  
-
-    router.post("/register" ,register);
+router.post("/register",register);
 
 router.post("/login",login);
 

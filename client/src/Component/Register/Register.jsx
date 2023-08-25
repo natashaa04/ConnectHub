@@ -50,7 +50,7 @@ const Register = () => {
     <div className="register">
       <form className="registerForm" onSubmit={submitHandler}>
         <Typography variant="h3" style={{ padding: "2vmax" }}>
-          Social Hub
+          ConnectHub
         </Typography>
 
         <Avatar

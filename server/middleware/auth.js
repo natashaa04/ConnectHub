@@ -7,7 +7,7 @@ export const isAuthenticated  = async (req, res, next) => {
   try {
 
       const { authorization } = await req.headers;
-    //  console.log(req,'hah');
+     console.log(authorization);
 
  
     if (!authorization) {
@@ -16,8 +16,10 @@ export const isAuthenticated  = async (req, res, next) => {
         message: "Please login first",
       });
     }   
-    const token = authorization.replaceAll("Bearer ","")
-    const decoded = await jwt.verify(token  , "abacabc456^%$");
+    const token = authorization.replace("Bearer ","")
+    // console.log(token)
+
+    const decoded = await jwt.verify(token, "abacabc456^%$");
 
     req.user = await User.findById(decoded._id);
 

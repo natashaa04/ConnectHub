@@ -9,7 +9,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import cloudinary from "cloudinary";
 import user from "./routes/user.js";
- import post from "./routes/post.js";
+import post from "./routes/post.js";
 
 
 const __filename=fileURLToPath(import.meta.url);
@@ -37,7 +37,6 @@ app.use(express.json());
 
 
 
-// app.get("*", (req, res) => {
 //   res.sendFile(path.resolve(__dirname, "../frontend/build/index.html"));
 // });
 
@@ -78,4 +77,4 @@ app.listen(PORT,()=>console.log(`server running on port ${PORT}`));
 
 
 
-//yjrpi5ait3ZKLjn4
+//    yjrpi5ait3ZKLjn4
