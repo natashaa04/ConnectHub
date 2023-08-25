@@ -121,6 +121,16 @@
      
    
     } 
+    .post .LikeDialogBox {
+      width: 90vw;
+      height: 90vh;
+      /* border:2px solid red; */
+      padding: 2vmax;
+      margin:2vmax;
+     overflow-x: hidden;
+     display: flex;
+     flex-wrap: wrap; 
+    }
 
   
   
@@ -184,12 +194,9 @@
     /* padding: 2vmax; */
    overflow-x: hidden;
    display: flex;
-   flex-wrap: wrap;
- 
- 
-    
-    
+   flex-wrap: wrap; 
   }
+ 
    .mainDialogBox {
     width: 90vw;
     height: 90vh;

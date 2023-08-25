@@ -175,7 +175,7 @@ const Post = ({
       </button> 
 
       <Dialog open={likesUser} onClose={() => setLikesUser(!likesUser)}>
-        <div className="DialogBox">
+        <div className="LikeDialogBox">
           <Typography variant="h4">Liked By</Typography>
 
           {likes.map((like) => (
