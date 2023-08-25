@@ -47,7 +47,11 @@ const Post = ({
   
   // converting date string into local date
     const date = new Date(createdAt);
-    const formatedDate = date.toLocaleDateString();
+ const day = date.getDate();
+const month = date.toLocaleString('default', { month: 'long' }); 
+const year = date.getFullYear();
+const formattedDate = `${day} ${month} ${year}`;
+
 
      let shortName=ownerName;
     if (ownerName.length > 8) {
@@ -127,7 +131,7 @@ const Post = ({
   
         </div>
    
-       <div className="dateBox">Posted on {formatedDate}</div>
+       <div className="dateBox">Posted on {formattedDate}</div>
       <img src={postImage} alt="Post" />
 
       <div className="postDetails">
