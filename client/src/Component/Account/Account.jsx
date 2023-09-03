@@ -139,7 +139,7 @@ const Account = () => {
           open={followersToggle}
           onClose={() => setFollowersToggle(!followersToggle)}
         >
-          <div className="DialogBox">
+          <div className="DialogBoxx">
             <Typography variant="h4">Followers</Typography>
 
             {user && user.followers.length > 0 ? (
@@ -163,7 +163,7 @@ const Account = () => {
           open={followingToggle}
           onClose={() => setFollowingToggle(!followingToggle)}
         >
-          <div className="DialogBox">
+          <div className="DialogBoxx">
             <Typography variant="h4">Following</Typography>
 
             {user && user.following.length > 0 ? (

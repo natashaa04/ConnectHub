@@ -121,10 +121,13 @@
     .accountright > a {
       font: 100 1rem "Roboto";
       margin-top: 6vw;
-      /* border:2px solid red */
     }
     .accountright .userName{
          font-size: x-small;
          font-weight:900;
     }
+    /* .unfollowButton{
+      font-size: x-small;
+      width: fit-content;
+   } */
   }

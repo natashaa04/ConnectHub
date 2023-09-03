@@ -14,7 +14,7 @@ import User from "../User/User";
 import { removeUserProfileError } from "../../Reducers/User";
 import { removeUserPostsError } from "../../Reducers/Post";
 import { removeLikeError,removeLikeMessage } from "../../Reducers/Post";
-
+import './UserProfile.css'
 
 
 
@@ -125,7 +125,7 @@ const UserProfile = () => {
               sx={{ height: "8vmax", width: "8vmax" }}
             />
 
-            <Typography variant="h5">{user.name}</Typography>
+            <Typography variant="h5" className="userName">{user.name}</Typography>
 
             <div>
               <button onClick={() => setFollowersToggle(!followersToggle)}>
@@ -147,7 +147,7 @@ const UserProfile = () => {
             </div>
 
             {myProfile ? null : (
-              <Button
+              <Button className="unfollowButton"
                 variant="contained"
                 style={{ background: following ? "red" : "" }}
                 onClick={followHandler}
@@ -162,7 +162,7 @@ const UserProfile = () => {
           open={followersToggle}
           onClose={() => setFollowersToggle(!followersToggle)}
         >
-          <div className="DialogBox">
+          <div className="DialogBoxx">
             <Typography variant="h4">Followers</Typography>
 
             {user && user.followers.length > 0 ? (
@@ -186,7 +186,7 @@ const UserProfile = () => {
           open={followingToggle}
           onClose={() => setFollowingToggle(!followingToggle)}
         >
-          <div className="DialogBox">
+          <div className="DialogBoxx">
             <Typography variant="h4">Following</Typography>
 
             {user && user.following.length > 0 ? (

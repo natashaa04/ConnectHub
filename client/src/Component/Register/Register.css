@@ -101,6 +101,20 @@
     
   }
   
+  .Heading{
+    font-size:x-large;
+    /* border: 2px solid red; */
+    font-weight:900;
+    color:#68aefa;;
+  }
+  @media screen and (max-width: 600px) {
+    .Heading{
+      font-size:x-large;
+      /* border: 2px solid red; */
+      font-weight:900;
+  
+    }
+  }
   
   
   

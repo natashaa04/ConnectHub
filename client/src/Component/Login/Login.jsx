@@ -40,9 +40,10 @@ const Login = () => {
   return (
     <div className="login">
       <form className="loginForm" onSubmit={loginHandler}>
-        <Typography variant="h3" style={{ padding: "2vmax" }}>
+        <h1 style={{ padding: "2vmax" }} className='Heading'
+        >
           ConnectHub
-        </Typography>
+        </h1>
 
         <div className="inputContainer">
           <Typography variant="h6">Email</Typography>

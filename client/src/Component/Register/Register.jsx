@@ -49,9 +49,9 @@ const Register = () => {
   return (
     <div className="register">
       <form className="registerForm" onSubmit={submitHandler}>
-        <Typography variant="h3" style={{ padding: "2vmax" }}>
+        <h1 className="Heading" style={{ padding: "2vmax" }}>
           ConnectHub
-        </Typography>
+        </h1>
 
         <Avatar
           src={avatar}
