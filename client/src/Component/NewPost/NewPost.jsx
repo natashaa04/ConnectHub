@@ -44,7 +44,7 @@ const NewPost = () => {
 
   useEffect(() => {
     if (error) {
-      alert.error(error);
+      alert.error("Something Went Wrong");
       dispatch(removeLikeError());
     }
 

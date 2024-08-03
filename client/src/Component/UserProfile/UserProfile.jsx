@@ -70,7 +70,7 @@ const UserProfile = () => {
 
   useEffect(() => {
     if (error) {
-      alert.error(error);
+      alert.error("SomethingWent Wrong");
       dispatch(removeUserPostsError());
       
     }
@@ -82,7 +82,7 @@ const UserProfile = () => {
     }
 
     if (userError) {
-      alert.error(userError);
+      alert.error("Something Went Wrong");
       dispatch(removeUserProfileError());
       
     }

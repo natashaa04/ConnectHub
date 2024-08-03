@@ -229,7 +229,7 @@ export const createNewPost =async (caption, image) => {
         },
       }
     );
-    console.log(data.message)
+    console.log("error while creating posts",data.message)
     store.dispatch(newPostSuccess(data.message));
 
 

@@ -36,6 +36,7 @@ export const commentOnPost = async (req, res) => {
           });
         
     } catch (error) {
+      console.log("error while adding comment",error.message);
       res.status(500).json({
         success: false,
         message: error.message,

@@ -11,7 +11,7 @@ export const isAuthenticated  = async (req, res, next) => {
 
  
     if (!authorization) {
-      console.log('yes')
+  
       return res.status(401).json({
         message: "Please login first",
       });

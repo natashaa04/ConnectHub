@@ -4,6 +4,7 @@ import cloudinary from "cloudinary";
 import Comment from "../models/comment-schema.js";
 // import { postOfFollowingFailure } from "../../client/src/Reducers/User.js";
 
+
 export const createPost = async (req, res) => {
   try {
     const myCloud = await cloudinary.v2.uploader.upload_large(req.body.image, {
@@ -32,12 +33,17 @@ export const createPost = async (req, res) => {
       message: "Post created",
     });
   } catch (error) {
+    console.log('error while creating post is',error)
     res.status(500).json({
       success: false,
       message: error.message,
     });
   }
 };
+
+
+
+
 
 export const deletePost = async (req, res) => {
   try {
@@ -61,12 +67,12 @@ export const deletePost = async (req, res) => {
 
 
     const comments = await Post.find({
-      post: {
-        $in: post._id,
-      },
-    })
+      post: post._id,
 
-    await Comment.deleteMany(comments);
+  })
+  
+
+    await Comment.deleteMany({post: post._id,});
 
     await Post.deleteOne(post);
 
@@ -82,12 +88,16 @@ export const deletePost = async (req, res) => {
       message: "Post deleted",
     });
   } catch (error) {
+    console.log("error while deleting post is",error.message);
     res.status(500).json({
       success: false,
       message: error.message,
     });
   }
 };
+
+
+
 
 export const likeAndUnlikePost = async (req, res) => {
   try {
@@ -128,6 +138,10 @@ export const likeAndUnlikePost = async (req, res) => {
     });
   }
 };
+
+
+
+
 
 export const getPostOfFollowing = async (req, res) => {
   try {
@@ -184,6 +198,9 @@ export const getPostOfFollowing = async (req, res) => {
     });
   }
 };
+
+
+
 
 export const updateCaption = async (req, res) => {
   try {

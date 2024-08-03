@@ -43,7 +43,7 @@ const Account = () => {
 
   useEffect(() => {
     if (error) {
-      alert.error(error);
+      alert.error("errorwhile loading the posts");
       dispatch(removeMyPostsError());
       
     }
